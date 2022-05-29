@@ -15,7 +15,7 @@ class Solution:
                 return False, False
             LeftHasP, LeftHasQ = aux(root.left, p, q)
             RightHasP, RightHasQ = aux(root.right, p, q)
-            if LeftHasP and LeftHasQ:
+            if (LeftHasP and LeftHasQ):
                 return True, True
             if RightHasP and RightHasQ:
                 return True, True

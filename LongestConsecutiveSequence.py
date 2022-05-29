@@ -1,9 +1,9 @@
 class Solution:
     def longestConsecutive(self, nums: list[int]) -> int:
         S = set(nums)
+        n = len(nums)
         best_score = 0
-        while not not S:
-            val = S.pop()
+        for val in nums:
             score = 1
             left_values = val-1
             right_values = val+1
